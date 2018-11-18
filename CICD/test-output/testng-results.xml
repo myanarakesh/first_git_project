@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Failed suite [Default suite]]" duration-ms="22736" started-at="2018-11-18T10:56:49Z" finished-at="2018-11-18T10:57:12Z">
+    <groups>
+    </groups>
+    <test name="Default test(failed)(failed)" duration-ms="22736" started-at="2018-11-18T10:56:49Z" finished-at="2018-11-18T10:57:12Z">
+      <class name="googleAutomation.SearchEngine">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:googleAutomation.SearchEngine@1933fd1]" name="beforeTest" is-config="true" duration-ms="12735" started-at="2018-11-18T16:26:49Z" finished-at="2018-11-18T16:27:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="verifySearch()[pri:0, instance:googleAutomation.SearchEngine@1933fd1]" name="verifySearch" duration-ms="4383" started-at="2018-11-18T16:27:02Z" finished-at="2018-11-18T16:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearch -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:googleAutomation.SearchEngine@1933fd1]" name="afterTest" is-config="true" duration-ms="5565" started-at="2018-11-18T16:27:07Z" finished-at="2018-11-18T16:27:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- googleAutomation.SearchEngine -->
+    </test> <!-- Default test(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
+</testng-results>
