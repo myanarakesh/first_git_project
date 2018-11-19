@@ -69,6 +69,12 @@ public class SearchEngine {
 		verifyResult = TestControl.driver.findElement(By.xpath(".//h3[contains(text(),'I love my india')]"));
 		Assert.assertTrue("Search results is not as per expected ",verifyResult.isEnabled());
 	}
+	
+	@Test(alwaysRun = true,priority = 4)
+	public void verifyTitle(){
+		Assert.assertTrue("Title of the page is not as per requirement",
+				prop.getProperty("googleTitle").trim().equals(TestControl.driver.getTitle()));
+	}
   @BeforeMethod
   public void beforeTest() throws IOException {
 	  reader =new FileReader("C:\\Users\\Admin\\git\\CICD_jenkins\\CICD\\src\\test\\resources\\config.properties");
@@ -79,6 +85,7 @@ public class SearchEngine {
 	  }
 	  else if(prop.getProperty("firefoxBrowser").equals("true")){
 		  TestControl.driver = new FirefoxDriver();
+		  
 	  }
 	  TestControl.driver.get("https://www.google.com/");
 	  TestControl.driver.manage().window().maximize();
