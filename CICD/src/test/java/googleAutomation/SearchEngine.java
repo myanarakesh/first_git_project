@@ -30,7 +30,7 @@ public class SearchEngine {
 	WebDriverWait wait = null;
 	Actions action = null;
 	
-	@Test(enabled = true, priority = 3)
+	@Test(enabled = false, priority = 3)
   public void search() {
 	  searchInput.sendKeys(prop.getProperty("searchKey"));
 	  searchInput.submit();
@@ -41,7 +41,7 @@ public class SearchEngine {
 	  System.out.println("Total number of anchor tags are "+count);
   }
 
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void predectiveSearch() throws Exception{
 		searchInput.sendKeys(prop.getProperty("searchKey"));
 		searchText(prop.getProperty("predectiveSearch"));
@@ -61,7 +61,7 @@ public class SearchEngine {
 		}
 	}
 	
-	@Test(enabled = true,priority = 2)
+	@Test(enabled = false,priority = 2)
 	public void verifySearch(){
 		searchInput.sendKeys(prop.getProperty("searchKey"));
 		searchInput.submit();
@@ -70,7 +70,7 @@ public class SearchEngine {
 		Assert.assertTrue("Search results is not as per expected ",verifyResult.isEnabled());
 	}
 	
-	@Test(alwaysRun = true,priority = 4)
+	@Test(alwaysRun = false,priority = 4)
 	public void verifyTitle(){
 		Assert.assertTrue("Title of the page is not as per requirement",
 				prop.getProperty("googleTitle").trim().equals(TestControl.driver.getTitle()));
