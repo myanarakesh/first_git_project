@@ -27,5 +27,11 @@
 	<classpathentry kind="lib" path="E:/selenium libraries/commons-io-2.6/commons-io-2.6-tests.jar"/>
 	<classpathentry kind="lib" path="E:/selenium libraries/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="var" path="M2_REPO"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
